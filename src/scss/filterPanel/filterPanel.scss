@@ -1,0 +1,35 @@
+$panelHeight: calc(80px - 20 * ((100vmin - 500px) / 940));
+
+.filter-panel {
+  height: $panelHeight;
+  width: 100vw;
+  background: #eaeaea;
+  color: #747474;
+  font-size: 13px;
+
+  & .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  &__label {
+    margin-right: 15px;
+  }
+
+  &__input {
+    border-radius: 11px;
+    border: solid 1px #979797;
+    width: 100px;
+    height: 31px;
+    outline: none;
+    padding: 2px 5px;
+  }
+
+  &__input:not(:last-child) {
+    margin-right: 45px;
+  }
+}
+
+@import 'filterPanelMedia.scss'

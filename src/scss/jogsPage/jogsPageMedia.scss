@@ -1,0 +1,27 @@
+@media (max-width: 375pt) {
+
+    .jogs-content__underline {
+        display: block;
+    }
+
+    .jogs-item {
+        margin: 45pt 0;
+    }
+
+    .empty-jogs {
+        
+        &__img {
+            width: 85pt;
+            height: 86pt;
+        }
+
+        &__title {
+            font-size: 21pt;
+        }
+
+        &__btn {
+            width: 173pt;
+            height: 48pt;
+        }
+    }
+}

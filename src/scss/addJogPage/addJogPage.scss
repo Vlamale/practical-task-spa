@@ -1,0 +1,71 @@
+@import '../fonts.scss';
+
+$jogFormWidth: calc(438px + 65 * ((100vmin - 500px) / 940));
+
+.add-jog-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.add-jog-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 44px;
+    background-color: #7ed321;
+    width: $jogFormWidth;
+    font-family: SFUIText-Regular;
+
+    &__cancel-btn {
+        align-self: flex-end;
+        width: calc(#{$jogFormWidth} / 18.6);
+        margin: calc(#{$jogFormWidth} / 18.6) calc(#{$jogFormWidth} / 18.6) calc(#{$jogFormWidth} / 10) 0;
+        cursor: pointer;
+        transition: transform .3s;
+    }
+
+    &__cancel-btn:hover {
+        transform: scale(1.1);
+    }
+
+    &__input-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-width: 64.8%;
+        margin-bottom: calc(#{$jogFormWidth} / 20.1);
+    }
+
+    &__input {
+        border-radius: 7px;
+        border: solid 1px #979797;
+        width: 72.3%;
+        height: 31px;
+        padding: 2px 5px;
+    }
+
+    &__submit {
+        font-family: SFUIText-Bold;
+        width: 63.6%;
+        border-radius: 25.2px;
+        margin: calc(#{$jogFormWidth} / 10.9) 0;
+        border: 2px solid #fff;
+        color: #fff;
+        background-color: transparent;
+        font-size: 12.6px;
+        height: 42px;
+        cursor: pointer;
+        transition: transform .3s;
+    }
+
+    &__submit:hover {
+        transform: scale(1.1);
+    }
+}
+
+@import 'addJogPageMedia.scss'

@@ -1,0 +1,34 @@
+$menuFilterMargin: calc(19pt + 20 * ((100vmin - 320px) / 180));
+
+@media (max-width: 375pt) {
+    .container {
+        padding: 0 25pt;
+    }
+
+    .header {
+        height: 77pt;
+
+        &__logo {
+            height: 37pt;
+        }
+
+        &__menu {
+            flex-direction: row-reverse;
+        }
+
+        &__menu-filter {
+            margin-right: $menuFilterMargin;
+        }
+
+        &__nav-burger {
+            display: block;
+            height: 24pt;
+            width: 28pt;
+            cursor: pointer;
+        }
+
+        &__nav-list {
+            display: none;
+        }
+    }
+}

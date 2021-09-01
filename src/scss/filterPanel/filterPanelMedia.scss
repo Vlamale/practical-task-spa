@@ -1,0 +1,14 @@
+$filterPanelWidth: calc(60pt + 12 * ((100vmin - 320px) / 180));
+$filterPanelHeight: calc(25pt + 6 * ((100vmin - 320px) / 180));
+
+@media (max-width: 375pt) {
+
+    .filter-panel {
+        height: 60pt;
+
+        &__input {
+            width: $filterPanelWidth;
+            height: $filterPanelHeight;
+        }
+    }
+}

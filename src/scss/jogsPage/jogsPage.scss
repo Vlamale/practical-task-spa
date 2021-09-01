@@ -1,0 +1,106 @@
+@import '../fonts.scss';
+
+.add-btn {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    cursor: pointer;
+    transition: transform .3s;
+}
+
+.add-btn:hover {
+    transform: scale(1.1);
+}
+
+.jogs-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__underline {
+        display: none;
+        width: 100vw;
+        border-bottom: 1px solid #dadada;
+    }
+}
+
+.jogs-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 201px;
+    font-family: SFUIText-Medium;
+    font-size: 14px;
+    color: #727272;
+    margin: 50px 0 78px 0;
+
+    &__img {
+        margin-right: 46px;
+    }
+
+    &__info b {
+        color: #000;
+    }
+
+    &__info-speed {
+        margin-top: 9px;
+    }
+
+    &__info-date {
+        font-family: SFUIText-Regular;
+        color: #958c8c;
+    }
+
+    & p {
+        margin-bottom: 12px;
+    }
+}
+
+.empty-jogs-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100%;
+    padding: 15px 15px;
+}
+
+.empty-jogs {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+    
+    &__img {
+        width: 150px;
+        height: 151px;
+        margin-bottom: 10.2%;
+    }
+
+    &__title {
+        font-family: SFUIText-Regular;
+        font-size: 24px;
+        color: #b0b0b0;
+        margin-bottom: 30%;
+    }
+
+    &__btn {
+        width: 249px;
+        min-height: 60px;
+        border-radius: 36px;
+        border: 2px solid #e990f9;
+        background: transparent;
+        color: #e990f9;
+        font-family: SFUIText-Bold;
+        font-size: 18px;
+        transition: transform .3s;
+        cursor: pointer;
+    }
+
+    &__btn:hover {
+        transform: scale(1.1);
+    }
+}
+
+@import 'jogsPageMedia.scss'
