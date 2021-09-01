@@ -1,0 +1,59 @@
+@import '../fonts.scss';
+
+$headerHeight: calc(102px + 14 * ((100vmin - 500px) / 940));
+$logoWidth: 147px;
+$logoHeight: calc(#{$headerHeight} / 2);
+$headerPaddingTB: calc(#{$headerHeight} / 3.8);
+
+.header {
+    position: absolute;
+    top: 0;
+    padding: $headerPaddingTB 0;
+    background-color: transparent;
+    height: $headerHeight;
+    width: 100%;
+    
+    & .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 25pt 0 25pt;
+    }
+
+    &__logo {
+        height: $logoHeight;
+        cursor: pointer;
+      }
+
+    &__cancel-btn {
+        cursor: pointer;
+    }
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 25pt;
+    font-family: SFUIText-Bold;
+    width: 170pt;
+    height: 150pt;
+    text-transform: uppercase;
+
+    &__item {
+        color: #464347;
+        transition: color .3s;
+        cursor: pointer;
+    }
+
+    &__item:hover {
+        color: #7ed321;
+    }
+}

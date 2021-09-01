@@ -1,0 +1,74 @@
+@import '../fonts.scss';
+
+$headerHeight: calc(102px + 14 * ((100vmin - 500px) / 940));
+$logoWidth: 147px;
+$logoHeight: calc(#{$headerHeight} / 2);
+$headerPaddingTB: calc(#{$headerHeight} / 3.8);
+
+.header {
+    position: absolute;
+    top: 0;
+    padding: $headerPaddingTB 0;
+    background-color: #7ed321;
+    height: $headerHeight;
+    width: 100%;
+    font-family: SFUIText-Bold;
+    text-transform: uppercase;
+    letter-spacing: normal;
+    color: #fff;
+  
+    &__logo {
+      height: $logoHeight;
+    }
+  
+    &__menu {
+      display: flex;
+    }
+
+    &__menu-filter {
+        cursor: pointer;
+        margin-right: 30px;
+        transition: transform .3s;
+    }
+
+    &__menu-filter:hover {
+        transform: scale(1.1);
+    }
+  
+    &__nav {
+      display: flex;
+      align-items: center;
+    }
+  
+    &__nav-list {
+      display: flex;
+    }
+  
+    &__nav-list-item {
+      margin-right: 3.1vw;
+      cursor: pointer;
+      line-height: 19px;
+      border-bottom: 2px solid transparent;
+      transition: border-bottom .3s;
+    }
+  
+    &__nav-list-item:last-child {
+      margin-right: 3.4vw;
+    }
+  
+    &__nav-list-item:hover {
+      border-bottom: 2px solid #fff;
+    }
+  
+    &__nav-burger {
+      display: none;
+    }
+  }
+  
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@import 'headerMedia.scss'

@@ -1,0 +1,26 @@
+@import '../fonts.scss';
+
+$infoPaddingTop: calc(32px + 53 * ((100vmin - 500px) / 940));
+
+.info {
+    margin: 0 auto;
+    max-width: 614px;
+    padding: $infoPaddingTop 20px 10px;
+
+    &__title {
+        color: #7ed321;
+        font-family: SFUIText-Bold;
+        font-size: 36px;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+    }
+
+    &__text {
+        font-family: SFUIText-Regular;
+        font-size: 14px;
+        line-height: 24px;
+        margin-bottom: 30px;
+    }
+}
+
+@import 'infoPageMedia.scss'

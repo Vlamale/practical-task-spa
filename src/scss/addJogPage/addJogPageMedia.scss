@@ -1,0 +1,21 @@
+$jogFormWidth: calc(190pt + 185 * ((100vmin - 320px) / 180));
+
+@media (max-width: 375pt) {
+
+    .add-jog-form {
+        width: $jogFormWidth;
+
+        &__input-row {
+            flex-direction: column;
+        }
+
+        &__label {
+            margin-bottom: 6pt;
+            align-self: flex-start;
+        }
+
+        &__input {
+            width: 100%;
+        }
+    }
+}
