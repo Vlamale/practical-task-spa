@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "axios": "^0.21.1",
     "cra-template": "1.1.2",
     "node-sass": "4.12",
     "react": "^17.0.2",
