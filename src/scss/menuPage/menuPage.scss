@@ -5,35 +5,14 @@ $logoWidth: 147px;
 $logoHeight: calc(#{$headerHeight} / 2);
 $headerPaddingTB: calc(#{$headerHeight} / 3.8);
 
-.header {
-    position: absolute;
-    top: 0;
-    padding: $headerPaddingTB 0;
-    background-color: transparent;
-    height: $headerHeight;
-    width: 100%;
-    
-    & .container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0 25pt 0 25pt;
-    }
 
-    &__logo {
-        height: $logoHeight;
-        cursor: pointer;
-      }
 
-    &__cancel-btn {
-        cursor: pointer;
-    }
-}
-
-main {
+.wrapper-menu {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
+    padding-top: calc(#{$headerHeight} / 2);
 }
 
 .menu-page {
@@ -46,6 +25,7 @@ main {
     width: 170pt;
     height: 150pt;
     text-transform: uppercase;
+    cursor: pointer;
 
     &__item {
         color: #464347;

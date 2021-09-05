@@ -1,6 +1,16 @@
 @import '../fonts.scss';
 
 $infoPaddingTop: calc(32px + 53 * ((100vmin - 500px) / 940));
+$headerHeight: calc(102px + 14 * ((100vmin - 500px) / 940));
+
+.wrapper-info {
+    padding-top: $headerHeight;
+    font-family: SFUIText-Regular;
+    font-size: 14px;
+    height: 100%;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
 
 .info {
     margin: 0 auto;
