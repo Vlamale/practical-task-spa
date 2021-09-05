@@ -16,7 +16,7 @@ $menuFilterMargin: calc(19pt + 20 * ((100vmin - 320px) / 180));
             flex-direction: row-reverse;
         }
 
-        &__menu-filter {
+        &__menu-filter, &__menu-filter.filter-inactive-btn {
             margin-right: $menuFilterMargin;
         }
 

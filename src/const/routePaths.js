@@ -1,0 +1,6 @@
+export const LOGIN_PAGE_ROUTE = '/login'
+export const MAIN_PAGE_ROUTE = '/'
+export const ADD_JOG_PAGE_ROUTE = '/add-jog'
+export const INFO_PAGE_ROUTE = '/info'
+export const CONTACT_US_PAGE_ROUTE = '/contact-us'
+export const MENU_PAGE_ROUTE = '/menu'

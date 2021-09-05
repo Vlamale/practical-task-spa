@@ -9,10 +9,9 @@
       background-repeat: no-repeat;
       border-radius: 44px;
       height: calc(220pt + 93 * ((100vmin - 320px) / 180));
-      width: 100%;
   
       &__btn {
-        border: 1px solid #e990f9;
+        border: 2px solid #e990f9;
         color: #e990f9;
         width: calc(110px + 41 * ((100vmin - 320px) / 180));
         height: calc((110px + 41 * ((100vmin - 320px) / 180)) / 2.5);

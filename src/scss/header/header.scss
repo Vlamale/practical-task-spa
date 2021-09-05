@@ -16,6 +16,7 @@ $headerPaddingTB: calc(#{$headerHeight} / 3.8);
     text-transform: uppercase;
     letter-spacing: normal;
     color: #fff;
+    cursor: pointer;
   
     &__logo {
       height: $logoHeight;
@@ -29,6 +30,11 @@ $headerPaddingTB: calc(#{$headerHeight} / 3.8);
         cursor: pointer;
         margin-right: 30px;
         transition: transform .3s;
+    }
+
+    &__menu-filter.filter-inactive-btn {
+      margin-right: 30px;
+      padding: 6.5px;
     }
 
     &__menu-filter:hover {
@@ -69,6 +75,37 @@ $headerPaddingTB: calc(#{$headerHeight} / 3.8);
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+
+.header-transperent {
+  position: absolute;
+  top: 0;
+  padding: $headerPaddingTB 0;
+  background-color: transparent;
+  height: $headerHeight;
+  width: 100%;
+  
+  & .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 25pt 0 25pt;
+  }
+
+  &__logo {
+      height: $logoHeight;
+      cursor: pointer;
+    }
+
+  &__cancel-btn {
+      cursor: pointer;
+      transition: transform .3s;
+  }
+
+  &__cancel-btn:hover {
+    transform: scale(1.2);
+} 
 }
 
 @import 'headerMedia.scss'

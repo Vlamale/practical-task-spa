@@ -1,5 +1,17 @@
 @import '../fonts.scss';
 
+$headerHeight: calc(102px + 14 * ((100vmin - 500px) / 940));
+
+.wrapper-jogs-page {
+    padding-top: $headerHeight;
+    font-family: SFUIText-Regular;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    flex-wrap: wrap;
+}
+
 .add-btn {
     position: fixed;
     bottom: 40px;
@@ -24,15 +36,28 @@
     }
 }
 
+.active {
+    transform: scale(1.2);
+    border-radius: 10px;
+    background: #e990f9;
+}
+
 .jogs-item {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    width: 201px;
     font-family: SFUIText-Medium;
     font-size: 14px;
+    width: 260px;
     color: #727272;
-    margin: 50px 0 78px 0;
+    margin: 30px 0 78px 0;
+    padding: 10px;
+    cursor: pointer;
+    transition: all .3s ease-in;
+
+
+    &:hover {
+        transform: scale(1.2);
+    }
 
     &__img {
         margin-right: 46px;
@@ -65,8 +90,8 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    height: 100%;
     padding: 15px 15px;
+    height: calc(100vh - #{$headerHeight});
 }
 
 .empty-jogs {

@@ -1,15 +1,23 @@
+$headerHeight: calc(102px + 14 * ((100vmin - 500px) / 940));
 $rectangleWidth: calc(100vmax / 2.86);
 $rectangleHeight: calc(#{$rectangleWidth} / 1.32);
-
-main {
-    height: 100%;
-  }
   
   main .container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
+  }
+
+  .wrapper-login {
+    padding-top: calc(#{$headerHeight} + 10px);
+    font-family: SFUIText-Regular;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-wrap: wrap;
   }
   
   .rectangle {
@@ -32,7 +40,7 @@ main {
       height: calc((#{$rectangleWidth} / 3.3) / 2.5);
       margin-bottom: 9.5%;
       background: transparent;
-      border: 1px solid #fff;
+      border: 2px solid #fff;
       border-radius: 44px;
       cursor: pointer;
       color: #fff;
