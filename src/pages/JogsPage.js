@@ -5,11 +5,10 @@ import JogContext from '../context/JogContext'
 import JogsPageContent from '../components/JogsPageContent'
 import Header from '../components/Header'
 import addBtn from '../img/add.png'
-import { getJogs } from '../http/jogsApi'
-import '../scss/jogsPage/jogsPage.scss'
 import { ADD_JOG_PAGE_ROUTE } from '../const/routePaths'
 import { Loader } from '../components/Loader'
-import { setNewJogs } from '../redux/actions'
+import { getJogsAction } from '../redux/actions'
+import '../scss/jogsPage/jogsPage.scss'
 
 const JogsPage = () => {
     const dispatch = useDispatch()
@@ -24,9 +23,8 @@ const JogsPage = () => {
         if (!cleanUpFunction) {
             const setData = async () => {
                 try {
-                    const data = await getJogs()
-                    dispatch(setNewJogs(data))
-                    setJogs(data)
+                    const response = await dispatch(getJogsAction())
+                    setJogs(response)
                     setLoading(false)
                 } catch (err) {
                     console.log(err);
