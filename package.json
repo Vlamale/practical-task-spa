@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@testing-library/jest-dom": "^5.14.1",
     "axios": "^0.21.1",
     "cra-template": "1.1.2",
     "node-sass": "4.12",
@@ -12,7 +13,8 @@
     "react-router-dom": "^5.2.1",
     "react-scripts": "4.0.3",
     "redux": "^4.1.1",
-    "redux-thunk": "^2.3.0"
+    "redux-thunk": "^2.3.0",
+    "web-vitals": "^2.1.0"
   },
   "scripts": {
     "start-client": "react-scripts start",
@@ -38,9 +40,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "@testing-library/jest-dom": "^5.14.1",
-    "web-vitals": "^2.1.0"
   }
 }
