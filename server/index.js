@@ -7,8 +7,11 @@ const app = express(); // create express app
 app.use(express.static(path.join(__dirname, "..", "build")));
 app.use(express.static("public"));
 
+<<<<<<< HEAD
 
 // start express server
+=======
+>>>>>>> aec4d02c8eea3bbf3d66aa8b00f65382c3d9cbaf
 app.get('/*', function(req, res) {
   res.sendFile(path.join(__dirname, '../build/index.html'), function(err) {
     if (err) {
